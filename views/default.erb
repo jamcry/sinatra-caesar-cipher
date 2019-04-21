@@ -1,9 +1,12 @@
-<p>Enter a text and character offset to encrypt the text</p>
-<form>
-  <label for='text'>Text:</label><br>
-  <input type='text' name='text'><br>
-  <label for='text'>Offset (integer):</label><br>
-  <input type='number' name='offset'><br>
-  <input type='submit' value='Encrypt'>
-</form>
-<p><%= @encrypted_text %></p>
+<div id='container'>
+  <p>Enter a text and an integer offset (the amount of shift) to encrypt the text, then click the button.</p>
+  <form id='input-form'>
+    <label for='text'>Text:</label><br>
+    
+    ​<textarea class='text-input' rows="3" cols="30" name='text'>This will be encrypted.</textarea><br>
+    <label for='text'>Offset (integer):</label><br>
+    <input type='number' name='offset' class='text-input'><br>
+    <input type='submit' value='Encrypt' class='encrypt-button'>
+  </form>
+  <p><%= @encrypted_text %></p>
+</div>
