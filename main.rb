@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 UP_MIN, UP_MAX = 65, 90
 DOWN_MIN, DOWN_MAX = 97, 122
 
